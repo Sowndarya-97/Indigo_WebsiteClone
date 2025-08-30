@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .navbar{
+            background-color: #003580;
+            padding: 10px;
+            display: flex;
+        }
+        .nav-item{
+            position: relative;
+            margin-right: 20px;
+        }
+        .nav-item a{
+            margin-left: 400px;
+        }
+        .nav-link{
+            background-color: #737b86;
+            color: azure;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #800064;
+            color: white;
+            width: 800px;
+            padding: 15px;
+            z-index: 1;
+            display: none;
+            gap: 20px;
+        }
+        .nav-item:hover .dropdown-content{
+            display: flex;
+        }
+        
+        .dropdown-links{
+            margin-bottom: 10px;
+            flex: 1;
+        }
+        .dropdown-links a{
+            color: white;
+            display: block;
+            padding: 8px 0;
+            text-decoration: none;
+        }
+        .dropdown-links a:hover{
+            background-color: red;
+            padding-left: 5px;
+        }
+        .dropdown-cards{
+            display: flex;
+            gap: 20px;
+        }
+        .card{
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 5px;
+            width: 180px;
+            font-size: 14px;
+        }
+        .card-title{
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .card-text{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-item">
+            <a href="#" class="nav-link">Book</a>
+            <div class="dropdown-content">
+                <div class="dropdown-links">
+                    <a href="#">Flight</a>
+                    <a href="#">Group Bookings</a>
+                    <a href="#">Hotels</a>
+                    <a href="#">Book Cargo</a>
+                </div>
+                <div class="dropdown-cards">
+                    <div class="card">
+                        <div class="card-title">Play your best card</div>
+                        <div class="card-text">Save 5000 usingfederal bank</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Book hotels on goindigo</div>
+                        <div class="card-text">grt 20 percent offer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
